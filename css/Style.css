@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.header {
+  background-color: white;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+.logo {
+  height: 130px;
+  width: 350px; }
+
+.header ul {
+  text-align: center;
+  list-style: none;
+  font-family: "Raleway", sans-serif; }
+
+.header li {
+  display: inline-block;
+  list-style: none;
+  padding: 11px; }
+
+.header a {
+  text-decoration: none;
+  color: rgba(82, 82, 82, 0.705);
+  font-weight: bolder; }
+  .header a:hover {
+    color: black; }
+
+/* Media Queries // Mobile Last */
+@media (max-width: 740px) {
+  .header {
+    width: 100vw;
+    flex-direction: row; }
+  .logo {
+    width: 190px;
+    height: 70px;
+    margin: 0 auto; }
+  .ul {
+    margin: 0 auto; } }
+
+.main {
+  background-color: white;
+  width: 100%; }
+
+.nuestroselegidos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.h4nuestroselegidos {
+  font-family: "League Spartan", sans-serif;
+  color: black;
+  padding: 20px; }
+
+.elegidos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.elegidos img {
+  height: 300px;
+  width: 300px;
+  display: inline;
+  padding: 25px;
+  transition: all 500ms ease; }
+
+.elegidos img:hover {
+  transform: scale(1.2);
+  cursor: pointer; }
+
+.container-botonwsp {
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  transition: ease 0.3s; }
+
+.container-botonwsp:hover {
+  transform: scale(1.1);
+  transition: 0.3s; }
+
+.boton {
+  width: 50px;
+  transition: ease 1s; }
+
+.linea {
+  border-top: 0.5px solid #b8aaaa;
+  height: 2px;
+  padding: 0;
+  margin: 20px auto 0 auto; }
+
+/* seccion footer */
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: #f3f3f3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto; }
+
+.footer a img {
+  width: 70px;
+  height: 70px; }
+
+.footer ul li {
+  list-style-type: none;
+  color: white; }
+
+.navfooter ul li img {
+  width: 30px;
+  height: 30px;
+  margin: 5px; }
+
+.navfooter ul {
+  display: flex; }
+
+.OCA {
+  width: 52px;
+  height: 27px; }
+
+.envio {
+  color: black; }
+
+/* COMIENZA PAGINA COMPRA TU BIKINI // MAIN */
+.titulocatalogo {
+  text-align: center;
+  font-weight: bold;
+  margin: 30px;
+  font-size: 30px; }
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.img {
+  margin: 15px; }
+
+.img img {
+  width: 220px;
+  height: 280px; }
+
+/* Comienza main // Cual es mi talle */
+.mainguiatalles {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%; }
+
+.mainguiatalles ul {
+  padding: 20px;
+  margin: 25px; }
+
+.guiadetalle {
+  font-weight: bold; }
+
+/* Comienza main locales */
+.mainlocales {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center; }
+
+.mapa {
+  width: 500px;
+  height: 250px; }
+
+/* comienza maing concejos de lavado */
+.mainconcejosdelavado {
+  width: 100%;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
+.mainconcejosdelavado ul {
+  margin: 50px;
+  padding: 15px; }
+
+.fotolavado {
+  width: 350px;
+  height: 400px;
+  padding: 15px; }
+
+/* Media Queries // Mobile Last */
+@media (max-width: 740px) {
+  .footer ul {
+    width: 266px; }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center; } }
+
+@media (max-width: 525px) {
+  .elegidos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .footer {
+    flex-direction: column;
+    height: 100vh; } }
